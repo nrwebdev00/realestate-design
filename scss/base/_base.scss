@@ -1,0 +1,29 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    box-sizing: border-box;
+    @include font-base;
+    line-height: $line-height-base;
+}
+ul{
+    list-style: none;
+}
+a, a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+.hide-text{
+    color: transparent;
+}
+.display-none{
+    display: none;
+}

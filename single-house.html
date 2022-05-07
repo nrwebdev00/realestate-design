@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 3rd Party links go here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Main links go here -->
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Setup for js project</title>
+</head>
+<body>
+    <header class="header">
+      <div class="row">
+        <div class="col-2-of-6">
+          <div class="header-btn-wrapper">
+            <a href="buy.html" class="btn-header">Buy</a>
+            <a href="sell.html" class="btn-header">Sell</a>
+            <a href="agent.html" class="btn-header">Find an Agent</a>
+          </div>
+        </div>
+        <div class="col-2-of-6">
+          <div class="header-logo-wrapper">
+            <img src="./img/logo1.jpeg" alt="logo">
+            <h2 class="padding-top-10">Real Estate Project</h2>
+          </div>
+        </div>
+        <div class="col-2-of-6">
+          <div class="header-user-btn-wrapper">
+            <a href="login.html" class="btn-user">
+              <i class="fa-solid fa-user"></i>
+              <span>Login</span>
+            </a>
+            <a href="register.html" class="btn-user">Register</a>
+            <!-- <a href="#" class="btn-user">Manage Rentals</a>
+            <a href="#" class="btn-user">
+              <i class="fa-solid fa-user"></i>
+              <span>Profile</span>
+            </a> -->
+          </div>
+        </div>
+      </div>
+      </div>
+    </header>
+    <header class="mobile-header">
+      <h2>Real Estate Project</h2>
+      <img src="./img/logo1.jpeg" alt="logo">
+      <a href="buy.html" class="btn-header">Buy</a>
+      <a href="sell.html" class="btn-header">Sell</a>
+      <a href="agent.html" class="btn-header">Find an Agent</a>
+      <a href="login.html" class="btn-user">
+        <i class="fa-solid fa-user"></i>
+        <span>Login</span>
+      </a>
+      <a href="register.html" class="btn-user">Register</a>
+    </header>
+    <div class="single-house padding-top-20">
+        <div class="slideshow">
+            <div id="prev" onclick="prevSlide()">&#10094;</div>
+            <div id="next" onclick="nextSlide()">&#10095;</div>
+            <div class="slide-count">
+                <i class="fa-solid fa-images"></i>
+                <span id="slide-num"> </span> / 
+                <span id="slide-total"></span>
+            </div>
+            <div class="slide">
+                <img src="./img/house1.jpeg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./img/inside1.jpeg" alt="inside house">
+            </div>
+            <div class="slide">
+                <img src="./img/inside2.jpeg" alt="inside house">
+            </div>
+            <div class="slide">
+                <img src="./img/inside3.jpeg" alt="inside house">
+            </div>
+            <div class="slide">
+                <img src="./img/inside4.jpeg" alt="inside house">
+            </div>
+        </div>
+        <div class="row padding-top-12">
+            <h1>$389,000</h1>
+        </div>
+        <div class="row house-info">
+            <div class="col-1-of-4">3 Bed</div>
+            <div class="col-1-of-4">2 Bath</div>
+            <div class="col-1-of-4">1503 SqFt.</div>
+            <div class="col-1-of-4">.75 Acres</div>
+        </div>
+        <div class="row house-address padding-top-8">
+            <div class="col-2-of-5">Address</div>
+            <div class="col-1-of-5">City</div>
+            <div class="col-1-of-5">State</div>
+            <div class="col-1-of-5">Zip</div>
+        </div>
+        <div class="row house-details padding-top-8">
+            <div class="col-1-of-3">Property Type</div>
+            <div class="col-1-of-3">HOA Fees</div>
+            <div class="col-1-of-3"><a href="link to agent">Agent Link</a></div>
+        </div>
+        <div class="row house-details padding-bottom-20">
+            <div class="col-1-of-3">Price per SqFt.</div>
+            <div class="col-1-of-3">Garage</div>
+            <div class="col-1-of-3">Year Built</div>
+        </div>
+    </div>
+    <section class="agent-realtor-contact margin-top-20">
+        <form action="#" class="form-agent-contact margin-bottom-20">
+          <h1 class="margin-top-8 margin-bottom-8">Contact Agent About: House address</h1>
+          <input type="text" name="name" placeholder="Name..." class="form-agent-contact__input">
+          <input type="email" name="email" placeholder="Email..." class="form-agent-contact__input">
+          <textarea name="message" class="form-agent-contact__textarea">Message...</textarea>
+          <input type="submit" value="Contact Realtor" class="btn-agent-contact">
+        </form>
+      </section>
+<footer>
+    footer
+    </footer>
+</body>
+<script src="./js/app.js"></script>
+</html>

@@ -1,0 +1,37 @@
+//Abstracts
+@import './abstracts/vars';
+@import './abstracts/mixins';
+@import './abstracts/functions';
+
+//base
+@import './base/base';
+@import './base/typography';
+@import './base/utlis';
+@import './base/grid';
+
+//libs - Any third Party Libs go here
+
+//pages
+@import './pages/index';
+@import './pages/buy';
+@import './pages/agent';
+@import './pages/sell';
+@import './pages/single-house';
+@import './pages/agent-search';
+@import './pages/house-search';
+@import './pages/login';
+@import './pages/register';
+@import './pages/single-agent';
+
+//components
+@import './components/header';
+@import './components/btn';
+@import './components/main-search';
+@import './components/forms';
+@import './components/cards';
+@import './components/footer';
+@import './components/slideshow';
+@import './components/tags';
+
+//media - All Media quires go here
+@import './media/header';

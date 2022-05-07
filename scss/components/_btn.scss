@@ -1,0 +1,99 @@
+.btn-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-header{
+    border: 2px solid $color-blue-700;
+    background-color: $color-blue-100;
+    padding: .5rem;
+    text-align: center;
+    border-radius: 2rem;
+    @include font-base($font-size: $fs-2, $color: $color-black);
+    @include btn-hover-effect;
+}
+.btn-user{
+    padding: .25rem;
+    border-bottom: 3px solid $color-blue-700;
+    a{
+        @include flex-center;
+        @include font-base($font-size: $fs-2, $color: $color-blue-700);
+        word-wrap: none;
+        i{
+            padding-right: .75rem
+        }
+    }
+}
+.btn-form-submit{
+    width: 100%;
+    height: 4rem;
+    border: 2px solid $color-blue-700;
+    background-color: $color-blue-700;
+    @include font-base($font-size:2.5rem, $color:$color-white, $font-weight: 600);
+    text-transform: uppercase;
+    border-radius: .5rem;
+    cursor: pointer;
+    @include btn-hover-effect;
+    
+}
+.btn-card-info{
+   @include btn-card;
+   @include font-base($font-size:1.75rem, $font-weight:600);
+   @include btn-hover-effect;
+
+   &:hover{
+       background-color: $color-green-600;
+       color: $color-green-200;
+   }
+
+   &:active{
+       background-color: $color-green-200;
+       color: $color-green-600;
+   }
+}
+.btn-buy-house-limit-view{
+    padding: .5rem 1.25rem;
+    @include btn-card;
+    @include font-base($font-size:1.75rem, $font-weight:600);
+    @include btn-hover-effect;
+
+    &:hover{
+        background-color: $color-green-600;
+        color: $color-green-200;
+    }
+ 
+    &:active{
+        background-color: $color-green-200;
+        color: $color-green-600;
+    }
+}
+.btn-agent{
+    margin: 0 auto;
+    width: 25%;
+    border:none;
+    border-bottom: 2px solid $color-red-400;
+    background-color: inherit;
+    @include font-base($font-size:1.75rem, $font-weight:600, $color: $color-red-400);
+}
+.btn-agent-contact{
+    margin: 0 auto;
+    width: 50%;
+    border: 2px solid $color-red-400;
+    background-color: inherit;
+    padding: 1rem;
+    border-radius: .5rem;
+    @include font-base($font-size:1.75rem, $font-weight:600, $color: $color-red-400);
+    @include btn-hover-effect;
+
+}
+.btn-sell-find-agent{
+    border: 1px solid $color-blue-400;
+    background-color: $color-blue-400;
+    padding: 1rem 5rem;
+    @include font-base($font-size:1.75rem, $font-weight:600, $color: $color-white);
+    @include btn-hover-effect;
+
+    &:visited{
+        color: $color-white !important;
+    }
+}

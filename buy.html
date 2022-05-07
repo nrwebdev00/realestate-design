@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 3rd Party links go here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Main links go here -->
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Setup for js project</title>
+</head>
+<body>
+    <header class="header">
+        <div class="row">
+        <div class="col-2-of-6">
+            <div class="header-btn-wrapper">
+            <a href="#" class="btn-header">Buy</a>
+            <a href="#" class="btn-header">Sell</a>
+            <a href="#" class="btn-header">Find an Agent</a>
+            </div>
+        </div>
+        <div class="col-2-of-6">
+            <div class="header-logo-wrapper">
+            <img src="./img/logo1.jpeg" alt="logo">
+            <h2 class="padding-top-10">Real Estate Project</h2>
+            </div>
+        </div>
+        <div class="col-2-of-6">
+            <div class="header-user-btn-wrapper">
+            <a href="#" class="btn-user">
+                <i class="fa-solid fa-user"></i>
+                <span>Login</span>
+            </a>
+            <a href="#" class="btn-user">Register</a>
+            <!-- <a href="#" class="btn-user">Manage Rentals</a>
+            <a href="#" class="btn-user">
+                <i class="fa-solid fa-user"></i>
+                <span>Profile</span>
+            </a> -->
+            </div>
+        </div>
+        </div>
+        </div>
+    </header>
+    <header class="mobile-header">
+        <h2>Real Estate Project</h2>
+        <img src="./img/logo1.jpeg" alt="logo">
+        <a href="buy.html" class="btn-header">Buy</a>
+        <a href="#" class="btn-header">Sell</a>
+        <a href="#" class="btn-header">Find an Agent</a>
+        <a href="#" class="btn-user">
+        <i class="fa-solid fa-user"></i>
+        <span>Login</span>
+        </a>
+        <a href="#" class="btn-user">Register</a>
+    </header>
+    <section class="main-search" style="background-image: url('./img/bg1.jpeg')">
+        <form action="" method="POST" class="main-search__form">
+        <div class="title margin-top-4">
+            Real Estate Search Home
+        </div>
+        <div class="form-group">
+            <div class="row">
+            <div class="col-2-of-6">
+                <input class="form-input" type="text" placeholder="Keyword">
+            </div>
+            <div class="col-2-of-6">
+                <input class="form-input" type="text" placeholder="City">
+            </div>
+            <div class="col-1-of-6">
+                <input class="form-input" type="text" placeholder="State">
+            </div>
+            <div class="col-1-of-6">
+                <input class="form-input" type="text" placeholder="Zip Code">
+            </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+            <div class="col-1-of-4">
+                <input type="text" class="form-input" placeholder="Bedroom's">
+            </div>
+            <div class="col-1-of-4">
+                <input type="text" class="form-input" placeholder="Bathroom's">
+            </div>
+            <div class="col-1-of-4">
+                <input type="text" class="form-input" placeholder="Square Feet">
+            </div>
+            <div class="col-1-of-4">
+                <input type="text" class="form-input" placeholder="Lot Size">
+            </div>
+            </div>      
+        </div>
+        <div class="form-group">
+            <div class="row">
+            <div class="col-1-of-5">
+                <input type="text" class="form-input" placeholder="Min Year">
+            </div>
+            <div class="col-1-of-5">
+                <input type="text" class="form-input" placeholder="Max Year">
+            </div>
+            <div class="col-1-of-5">
+                <input type="text" class="form-input" placeholder="Min Price">
+            </div>
+            <div class="col-1-of-5">
+                <input type="text" class="form-input" placeholder="Max Price">
+            </div>
+            <div class="col-1-of-5">
+                <div class="check-box-group">
+                <input type="checkbox" class="form-checkbox">
+                <label for="has_garge" class="label-checkbox">Has Garage</label>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="form-group margin-bottom-8">
+            <div class="row">
+            <div class="col-1-of-5 hide-text">_</div>
+            <div class="col-3-of-5"><input type="submit" value="submit" class="btn-form-submit"></div>
+            <div class="col-1-of-5 hide-text">_</div>
+            </div>
+        </div>
+        </form>
+    </section>
+    <section class="buy-showcase-1 buy-showcase">
+        <div class="buy-showcase__title-box">
+                <h1>Featured Listings</h1>
+                <a href="#">View All Listings</a>
+        </div>
+        <div class="buy-showcase__listing-wrapper">
+            <div class="row">
+                <div class="col-1-of-4 showcase__house padding-bottom-6">
+                    <img src="./img/house1.jpeg" alt="house">
+                    <h2 class="padding-left-3">$355,000</h2>
+                    <div class="row">
+                        <div class="col-1-of-3">
+                            <h5>Beds: 3</h5>
+                        </div>
+                        <div class="col-1-of-3">
+                            <h5>Baths: 1.5</h5>
+                        </div>
+                        <div class="col-1-of-3">
+                            <h5>1456 SqFt.</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3-of-6">
+                            <h5>123 Any Street</h5>
+                        </div>
+                        <div class="col-2-of-6">
+                            <h5>Any City</h5>
+                        </div>
+                        <div class="col-1-of-6">
+                            <h5>CA</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-4 showcase__house padding-bottom-6">
+                    <img src="./img/house2.jpeg" alt="house 2">
+                    <h2 class="padding-left-3">$355,000</h2>
+                    <div class="row">
+                        <div class="col-1-of-3">
+                            <h5>Beds: 3</h5>
+                        </div>
+                        <div class="col-1-of-3">
+                            <h5>Baths: 1.5</h5>
+                        </div>
+                        <div class="col-1-of-3">
+                            <h5>1456 SqFt.</h5>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-3-of-6">
+                            <h5>123 Any Street</h5>
+                        </div>
+                        <div class="col-2-of-6">
+                            <h5>Any City</h5>
+                        </div>
+                        <div class="col-1-of-6">
+                            <h5>CA</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-4 showcase__house padding-bottom-6">
+                    <img src="./img/house3.jpeg" alt="house">
+                    <h2 class="padding-left-3">$355,000</h2>
+                    <div class="row">
+                        <div class="col-1-of-3">
+                            <h5>Beds: 3</h5>
+                        </div>
+                        <div class="col-1-of-3">
+                            <h5>Baths: 1.5</h5>
+                        </div>
+                        <div class="col-1-of-3">
+                            <h5>1456 SqFt.</h5>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-3-of-6">
+                            <h5>123 Any Street</h5>
+                        </div>
+                        <div class="col-2-of-6">
+                            <h5>Any City</h5>
+                        </div>
+                        <div class="col-1-of-6">
+                            <h5>CA</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-4 showcase__house padding-bottom-6">
+                    <img src="./img/house4.jpeg" alt="house">
+                    <h2 class="padding-left-3">$355,000</h2>
+                    <div class="row">
+                        <div class="col-1-of-3">
+                            <h5>Beds: 3</h5>
+                        </div>
+                        <div class="col-1-of-3">
+                            <h5>Baths: 1.5</h5>
+                        </div>
+                        <div class="col-1-of-3">
+                            <h5>1456 SqFt.</h5>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-3-of-6">
+                            <h5>123 Any Street</h5>
+                        </div>
+                        <div class="col-2-of-6">
+                            <h5>Any City</h5>
+                        </div>
+                        <div class="col-1-of-6">
+                            <h5>CA</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="buy-showcase-2 buy-showcase margin-top-12">
+        <div class="buy-showcase__title-box margin-top-12">
+            <h1>New Listings</h1>
+            <a href="#">View New Listings</a>
+        </div>
+        <div class="buy-showcase__listing-wrapper">
+            <div class="row">
+                <div class="col-1-of-4 showcase__house padding-bottom-6">
+                    <img src="./img/house1.jpeg" alt="house">
+                    <h2 class="padding-left-3">$355,000</h2>
+                    <div class="row">
+                        <div class="col-1-of-3">
+                            <h5>Beds: 3</h5>
+                        </div>
+                        <div class="col-1-of-3">
+                            <h5>Baths: 1.5</h5>
+                        </div>
+                        <div class="col-1-of-3">
+                            <h5>1456 SqFt.</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3-of-6">
+                            <h5>123 Any Street</h5>
+                        </div>
+                        <div class="col-2-of-6">
+                            <h5>Any City</h5>
+                        </div>
+                        <div class="col-1-of-6">
+                            <h5>CA</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-4 showcase__house padding-bottom-6">
+                    <img src="./img/house2.jpeg" alt="house 2">
+                    <h2 class="padding-left-3">$355,000</h2>
+                    <div class="row">
+                        <div class="col-1-of-3">
+                            <h5>Beds: 3</h5>
+                        </div>
+                        <div class="col-1-of-3">
+                            <h5>Baths: 1.5</h5>
+                        </div>
+                        <div class="col-1-of-3">
+                            <h5>1456 SqFt.</h5>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-3-of-6">
+                            <h5>123 Any Street</h5>
+                        </div>
+                        <div class="col-2-of-6">
+                            <h5>Any City</h5>
+                        </div>
+                        <div class="col-1-of-6">
+                            <h5>CA</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-4 showcase__house padding-bottom-6">
+                    <img src="./img/house3.jpeg" alt="house">
+                    <h2 class="padding-left-3">$355,000</h2>
+                    <div class="row">
+                        <div class="col-1-of-3">
+                            <h5>Beds: 3</h5>
+                        </div>
+                        <div class="col-1-of-3">
+                            <h5>Baths: 1.5</h5>
+                        </div>
+                        <div class="col-1-of-3">
+                            <h5>1456 SqFt.</h5>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-3-of-6">
+                            <h5>123 Any Street</h5>
+                        </div>
+                        <div class="col-2-of-6">
+                            <h5>Any City</h5>
+                        </div>
+                        <div class="col-1-of-6">
+                            <h5>CA</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-4 showcase__house padding-bottom-6">
+                    <img src="./img/house4.jpeg" alt="house">
+                    <h2 class="padding-left-3">$355,000</h2>
+                    <div class="row">
+                        <div class="col-1-of-3">
+                            <h5>Beds: 3</h5>
+                        </div>
+                        <div class="col-1-of-3">
+                            <h5>Baths: 1.5</h5>
+                        </div>
+                        <div class="col-1-of-3">
+                            <h5>1456 SqFt.</h5>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-3-of-6">
+                            <h5>123 Any Street</h5>
+                        </div>
+                        <div class="col-2-of-6">
+                            <h5>Any City</h5>
+                        </div>
+                        <div class="col-1-of-6">
+                            <h5>CA</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="buy-showcase-3 buy-showcase">
+        <div class="buy-showcase__title-box ">
+            <h1>Open Houses</h1>
+            <a href="#">View All Open Houses</a>
+        </div>
+        <div class="buy-showcase__listing-wrapper">
+            <div class="row">
+                <div class="col-1-of-4 showcase__house padding-bottom-6">
+                    <img src="./img/house1.jpeg" alt="house">
+                    <h2 class="padding-left-3">$355,000</h2>
+                    <div class="row">
+                        <div class="col-1-of-3">
+                            <h5>Beds: 3</h5>
+                        </div>
+                        <div class="col-1-of-3">
+                            <h5>Baths: 1.5</h5>
+                        </div>
+                        <div class="col-1-of-3">
+                            <h5>1456 SqFt.</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3-of-6">
+                            <h5>123 Any Street</h5>
+                        </div>
+                        <div class="col-2-of-6">
+                            <h5>Any City</h5>
+                        </div>
+                        <div class="col-1-of-6">
+                            <h5>CA</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-4 showcase__house padding-bottom-6">
+                    <img src="./img/house2.jpeg" alt="house 2">
+                    <h2 class="padding-left-3">$355,000</h2>
+                    <div class="row">
+                        <div class="col-1-of-3">
+                            <h5>Beds: 3</h5>
+                        </div>
+                        <div class="col-1-of-3">
+                            <h5>Baths: 1.5</h5>
+                        </div>
+                        <div class="col-1-of-3">
+                            <h5>1456 SqFt.</h5>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-3-of-6">
+                            <h5>123 Any Street</h5>
+                        </div>
+                        <div class="col-2-of-6">
+                            <h5>Any City</h5>
+                        </div>
+                        <div class="col-1-of-6">
+                            <h5>CA</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-4 showcase__house padding-bottom-6">
+                    <img src="./img/house3.jpeg" alt="house">
+                    <h2 class="padding-left-3">$355,000</h2>
+                    <div class="row">
+                        <div class="col-1-of-3">
+                            <h5>Beds: 3</h5>
+                        </div>
+                        <div class="col-1-of-3">
+                            <h5>Baths: 1.5</h5>
+                        </div>
+                        <div class="col-1-of-3">
+                            <h5>1456 SqFt.</h5>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-3-of-6">
+                            <h5>123 Any Street</h5>
+                        </div>
+                        <div class="col-2-of-6">
+                            <h5>Any City</h5>
+                        </div>
+                        <div class="col-1-of-6">
+                            <h5>CA</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-4 showcase__house padding-bottom-6">
+                    <img src="./img/house4.jpeg" alt="house">
+                    <h2 class="padding-left-3">$355,000</h2>
+                    <div class="row">
+                        <div class="col-1-of-3">
+                            <h5>Beds: 3</h5>
+                        </div>
+                        <div class="col-1-of-3">
+                            <h5>Baths: 1.5</h5>
+                        </div>
+                        <div class="col-1-of-3">
+                            <h5>1456 SqFt.</h5>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-3-of-6">
+                            <h5>123 Any Street</h5>
+                        </div>
+                        <div class="col-2-of-6">
+                            <h5>Any City</h5>
+                        </div>
+                        <div class="col-1-of-6">
+                            <h5>CA</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="buy-showcase-4 buy-showcase">
+        <div class="buy-showcase__title-box">
+            <h1>Houses Under 300k</h1>
+            <a href="#">View All Listings Under 300k</a>
+        </div>
+        <div class="buy-showcase__listing-wrapper">
+            <div class="row">
+                <div class="col-1-of-4 showcase__house padding-bottom-6">
+                    <img src="./img/house1.jpeg" alt="house">
+                    <h2 class="padding-left-3">$355,000</h2>
+                    <div class="row">
+                        <div class="col-1-of-3">
+                            <h5>Beds: 3</h5>
+                        </div>
+                        <div class="col-1-of-3">
+                            <h5>Baths: 1.5</h5>
+                        </div>
+                        <div class="col-1-of-3">
+                            <h5>1456 SqFt.</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3-of-6">
+                            <h5>123 Any Street</h5>
+                        </div>
+                        <div class="col-2-of-6">
+                            <h5>Any City</h5>
+                        </div>
+                        <div class="col-1-of-6">
+                            <h5>CA</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-4 showcase__house padding-bottom-6">
+                    <img src="./img/house2.jpeg" alt="house 2">
+                    <h2 class="padding-left-3">$355,000</h2>
+                    <div class="row">
+                        <div class="col-1-of-3">
+                            <h5>Beds: 3</h5>
+                        </div>
+                        <div class="col-1-of-3">
+                            <h5>Baths: 1.5</h5>
+                        </div>
+                        <div class="col-1-of-3">
+                            <h5>1456 SqFt.</h5>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-3-of-6">
+                            <h5>123 Any Street</h5>
+                        </div>
+                        <div class="col-2-of-6">
+                            <h5>Any City</h5>
+                        </div>
+                        <div class="col-1-of-6">
+                            <h5>CA</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-4 showcase__house padding-bottom-6">
+                    <img src="./img/house3.jpeg" alt="house">
+                    <h2 class="padding-left-3">$355,000</h2>
+                    <div class="row">
+                        <div class="col-1-of-3">
+                            <h5>Beds: 3</h5>
+                        </div>
+                        <div class="col-1-of-3">
+                            <h5>Baths: 1.5</h5>
+                        </div>
+                        <div class="col-1-of-3">
+                            <h5>1456 SqFt.</h5>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-3-of-6">
+                            <h5>123 Any Street</h5>
+                        </div>
+                        <div class="col-2-of-6">
+                            <h5>Any City</h5>
+                        </div>
+                        <div class="col-1-of-6">
+                            <h5>CA</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-4 showcase__house padding-bottom-6">
+                    <img src="./img/house4.jpeg" alt="house">
+                    <h2 class="padding-left-3">$355,000</h2>
+                    <div class="row">
+                        <div class="col-1-of-3">
+                            <h5>Beds: 3</h5>
+                        </div>
+                        <div class="col-1-of-3">
+                            <h5>Baths: 1.5</h5>
+                        </div>
+                        <div class="col-1-of-3">
+                            <h5>1456 SqFt.</h5>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-3-of-6">
+                            <h5>123 Any Street</h5>
+                        </div>
+                        <div class="col-2-of-6">
+                            <h5>Any City</h5>
+                        </div>
+                        <div class="col-1-of-6">
+                            <h5>CA</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<footer>
+    footer
+    </footer>
+</body>
+<script src="./js/app.js"></script>
+</html>

@@ -1,0 +1,26 @@
+h1{
+    @include font-base($font-size: 3.0rem, $font-weight: 600, $color:inherit);
+}
+
+h2{
+    @include font-base($font-size: 2.25rem, $font-weight: 500, $color:inherit);
+}
+
+h3{
+    @include font-base($font-size: 1.75rem, $font-weight: 400, $color:inherit);
+}
+h4{
+    @include font-base($font-size: 1.45rem, $font-weight: 300, $color:inherit);
+}
+h5{
+    @include font-base($font-size: 1.25rem, $font-weight: 200, $color:inherit);
+}
+p{
+    text-align: justify;
+    @include font-base($font-size: 1.15rem, $font-weight:200, $color:inherit);
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+a{
+    @include font-base($font-size: 1.25rem, $font-weight:200, $color: $color-blue-200);
+}

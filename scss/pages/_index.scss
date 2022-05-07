@@ -1,0 +1,140 @@
+.about-info{
+    margin: 10rem 0;
+    padding: 0 4rem;
+}
+
+.buy-house{
+    width: 100%;
+    opacity: .75;
+
+    &__title{
+        margin: 0 auto;
+        width: 50%;
+        height: 40rem;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include font-base($font-size: 10rem, $font-weight:600, $color:$color-green-600);
+
+        &-slant{
+            transform: skew(4deg, -8deg);
+            border-top: 5px solid $color-green-400;
+            border-bottom: 5px solid $color-green-400;
+            text-shadow: 2px 2px 4px rgba(0,0,0,.85);
+        }
+
+    } 
+}
+.rent-house{
+    width: 100%;
+    
+    &__title{
+        height: 40rem;
+        width: 100%;
+        background-position: center;
+        background-image: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include font-base($font-size: 10rem, $font-weight:600, $color:$color-blue-600);
+
+        &-slant{
+            text-shadow: 2px 2px 4px rgba(0,0,0,.85);
+        }
+    }
+}
+
+.property-management{
+    margin: 15rem 0;
+    width: 100%;
+    height: 50rem;
+    border-top: 4px solid $color-blue-600;
+    border-bottom: 4px solid $color-blue-600;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &__left{
+        border-right: 4px solid $color-blue-600;
+        height: 49.5rem;
+        img{
+            width: 100%;
+            height: 49.5rem;
+        }
+    }
+
+    &__right{
+        height: 50rem;
+        padding: 5rem;
+        h1{
+            text-align: center;
+            margin-bottom: 7.5rem;
+            @include font-base($font-size:5rem, $font-weight:600,$color: $color-blue-600);
+            text-shadow: 2px 2px 4px rgba(0,0,0,.85)
+        }
+        p{
+            line-height: 2 !important;
+            @include font-base($font-size:1.75rem, $font-weight:100, $color: $color-blue-400)         
+        }
+    }
+}
+
+.find-realtor{
+    margin: 20rem 0 0 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 40rem;
+    border-top: 4px solid $color-blue-600;
+    border-bottom: 4px solid $color-blue-600;
+
+    &__left{
+        border-right: 4px solid $color-blue-600;
+        padding: 5rem;
+        h1{
+            text-align: center;
+            margin-bottom: 7.5rem;
+            @include font-base($font-size:5rem, $font-weight:600,$color: $color-blue-600);
+            text-shadow: 2px 2px 4px rgba(0,0,0,.85)
+        }
+        p{
+            line-height: 2 !important;
+            @include font-base($font-size:1.75rem, $font-weight:100, $color: $color-blue-400)         
+        }
+    }
+
+    &__right{
+        width: 100%;
+
+        img{
+            width: 100%;
+            height: 39.15rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .property-management{
+        display: flex;
+        flex-direction: column;
+        border: none;
+
+        &__left{
+            display: none;
+        }
+    }
+
+    .find-realtor{
+        display: flex;
+        flex-direction: column;
+        border: none;
+
+        &__right{
+            display: none
+        }
+
+    }
+}

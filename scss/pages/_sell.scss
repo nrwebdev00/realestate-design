@@ -1,0 +1,74 @@
+.sell-wrapper{
+    max-width: 125rem;
+    width: 100%;
+    margin: 0 auto;
+    .sell-hero{
+        &__left{
+            padding: 3rem;
+            h1{
+                font-size: 4rem;
+                text-transform: capitalize;
+            }
+            h5{
+                font-size: 2rem;
+                text-align: justify;
+                letter-spacing: 1px;
+                line-height: 2;
+            }
+        }
+        &__right{
+            padding: 0 8rem 4rem 2rem;
+        }
+    }
+
+    .sell-hero-2{
+        &__left{
+            h2{
+                text-transform: capitalize;
+                @include font-base($font-size:3.25rem, $font-weight:400, $color: $color-blue-400);
+            }
+            .sell-hero-2-group{
+               display: grid;
+               grid-template-columns: 1fr 4fr;
+               gap: 2rem;
+               margin-bottom: 1.5rem;
+               i{
+                   font-size: 2rem;
+                   color: $color-blue-400;
+               }
+               h5{
+                    font-size: 1.85rem;
+                    text-align: left;
+               }
+            }
+        }
+        &__right{
+            h2{
+                text-transform: capitalize;
+                @include font-base($font-size:3.25rem, $font-weight:400,);
+            }
+            h5{
+                width: 75%;
+                font-size: 1.85rem;
+                text-align: justify;
+                letter-spacing: 1px;
+                line-height: 2;
+            }
+        }
+    }
+
+    .sell-find-agent{
+        h1{
+            @include font-base($font-size: 5rem, $font-weight:600, $color:$color-blue-400);
+            text-transform: capitalize;
+        }
+        h5{
+           width: 85%;
+           margin: 4rem auto 2rem auto;
+           font-size: 1.85rem;
+            text-align: justify;
+            letter-spacing: 1px;
+            line-height: 2;
+        }
+    }
+}

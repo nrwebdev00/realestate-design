@@ -1,0 +1,24 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"../scss/main.scss",
+		"../scss/abstracts/_vars.scss",
+		"../scss/abstracts/_mixins.scss",
+		"../scss/abstracts/_functions.scss",
+		"../scss/base/_base.scss",
+		"../scss/base/_typography.scss",
+		"../scss/pages/_index.scss"
+	],
+	"sourcesContent": [
+		"//Abstracts\n@import './abstracts/vars';\n@import './abstracts/mixins';\n@import './abstracts/functions';\n\n//base\n@import './base/base';\n@import './base/typography';\n\n//libs - Any third Party Libs go here\n\n//pages\n@import './pages/index';\n\n//components\n\n//media - All Media quires go here\n",
+		"@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500&display=swap');\n\n$font-default: 'Exo 2', sans-serif;\n\n//colors\n$color-black: #272727;\n$color-gray: #747474;\n$color-white: #f3f3f3;\n$color-1: #FF652F;\n$color-2: #FFE400;\n$color-3: #14A76C;",
+		"",
+		"@use \"sass:string\";\n\n$base-size: .75rem;\n\n$sizes:(\n    \"size-1\": $base-size * 0.25,\n    \"size-2\": $base-size * 0.50,\n    \"size-3\": $base-size * 0.75,\n    \"size-4\": $base-size * 1,\n    \"size-5\": $base-size * 1.25,\n    \"size-6\": $base-size * 1.5,\n    \"size-7\": $base-size * 1.75,\n    \"size-8\": $base-size * 2,\n    \"size-9\": $base-size * 2.25,\n    \"size-10\": $base-size * 2.5,\n    \"size-11\": $base-size * 2.75,\n    \"size-12\": $base-size * 3,\n    \"size-13\": $base-size * 3.5,\n    \"size-14\": $base-size * 4.0,\n    \"size-15\": $base-size * 4.5,\n);\n\n@each $size-number, $size-value in $sizes {\n    \n\n    .padding- {\n        padding: $size-value\n    }\n}",
+		"*,\n*::after,\n*::before{\n    margin: 0;\n    padding: 0;\n    box-sizing: inherit;\n}\n\nhtml{\n    font-size: 62.5%;\n}\nbody{\n    box-sizing: border-box;\n}",
+		"",
+		""
+	],
+	"names": [],
+	"mappings": "ACAA,OAAO,CAAC,2FAAI;AEAZ,IAAI,CAAJ,aAAI;;AAyBA,AAAA,SAAS,CAAC;EACN,OAAO,EArBD,SAAiB;CAsB1B;;;AAFD,AAAA,SAAS,CAAC;EACN,OAAO,EApBD,QAAiB;CAqB1B;;;AAFD,AAAA,SAAS,CAAC;EACN,OAAO,EAnBD,SAAiB;CAoB1B;;;AAFD,AAAA,SAAS,CAAC;EACN,OAAO,EAlBD,OAAc;CAmBvB;;;AAFD,AAAA,SAAS,CAAC;EACN,OAAO,EAjBD,SAAiB;CAkB1B;;;AAFD,AAAA,SAAS,CAAC;EACN,OAAO,EAhBD,QAAgB;CAiBzB;;;AAFD,AAAA,SAAS,CAAC;EACN,OAAO,EAfD,SAAiB;CAgB1B;;;AAFD,AAAA,SAAS,CAAC;EACN,OAAO,EAdD,MAAc;CAevB;;;AAFD,AAAA,SAAS,CAAC;EACN,OAAO,EAbD,SAAiB;CAc1B;;;AAFD,AAAA,SAAS,CAAC;EACN,OAAO,EAZA,QAAgB;CAa1B;;;AAFD,AAAA,SAAS,CAAC;EACN,OAAO,EAXA,SAAiB;CAY3B;;;AAFD,AAAA,SAAS,CAAC;EACN,OAAO,EAVA,OAAc;CAWxB;;;AAFD,AAAA,SAAS,CAAC;EACN,OAAO,EATA,QAAgB;CAU1B;;;AAFD,AAAA,SAAS,CAAC;EACN,OAAO,EARA,IAAgB;CAS1B;;;AAFD,AAAA,SAAS,CAAC;EACN,OAAO,EAPA,QAAgB;CAQ1B;;;AC3BL,AAAA,CAAC;AACD,CAAC,AAAA,OAAO;AACR,CAAC,AAAA,QAAQ,CAAA;EACL,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,OAAO;CACtB;;;AAED,AAAA,IAAI,CAAA;EACA,SAAS,EAAE,KAAK;CACnB;;;AACD,AAAA,IAAI,CAAA;EACA,UAAU,EAAE,UAAU;CACzB"
+}

@@ -1,0 +1,15 @@
+.single-house{
+    max-width: 75rem;
+    width: 100%;
+    margin: 0 auto;
+
+    .house-info, .house-address{
+        width: 65%;
+        margin: 0 0 0 2rem!important;
+        @include font-base($font-size:1.75rem);
+    }
+    .house-details{
+        @include font-base($font-size:1.75rem)
+    }
+
+}

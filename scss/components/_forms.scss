@@ -1,0 +1,108 @@
+.form-group{
+    width: 100%;
+    padding: 5rem 1rem 0 2rem default;
+}
+
+.check-box-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    input{
+        margin-right: .75rem;
+
+        &:focus, &:active{
+            outline: none
+        }
+    }
+    label{
+        @include font-base($font-size:1.5rem, $color:$color-white)
+    }
+}
+
+
+.form-input{
+    width: 100%;
+    height: 4rem;
+    padding-left: 2rem;
+    border: none;
+    border-bottom: 3px solid $color-blue-700;
+    background-color: transparent;
+    @include font-base($font-size:1.75rem, $color:$color-white);
+    
+    &::placeholder{
+        @include font-base($font-size: 1.75rem, $color: $color-white);
+    }
+}
+.form-agent-input{
+    margin-bottom: 2rem;
+    border: none;
+    border-bottom: 2px solid $color-red-400;
+    @include font-base($font-size:1.75rem, $font-weight: 100, $color: $color-red-400);
+    background-color: inherit;
+    &::placeholder{
+        @include font-base($font-size:1.75rem, $font-weight: 100, $color: $color-red-400);
+    }
+
+    &:not(:last-child){
+        margin-right: 1rem;
+    }
+}
+.form-agent-contact{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 3rem;
+    border: 2px solid $color-red-400;
+    border-radius: .5rem;
+    box-shadow: 3px 3px 6px rgba(0,0,0, .65);
+    color: $color-red-400;
+    background-color: rgba($color-red-100, .1);
+
+    &__input{
+        border: none;
+        border-bottom: 2px solid $color-red-400;
+        background-color: inherit;
+        @include font-base($font-size:1.75rem, $font-weight:100, $color:$color-red-400);
+        padding: 1rem;
+        box-shadow: 3px 3px 6px rgba(0,0,0, .65);
+
+        &::placeholder{
+            @include font-base($font-size:1.75rem, $font-weight:100, $color:$color-red-400);
+
+        }
+    }
+
+    &__textarea{
+        border: 2px solid $color-red-400;
+        min-height: 20rem;
+        padding: 1.5rem;
+        @include font-base($font-size:1.75rem, $font-weight:100, $color:$color-red-400);
+        background-color: inherit;
+        box-shadow: 3px 3px 6px rgba(0,0,0, .65);
+    }
+}
+.form-login, .form-register{
+    padding: 3rem;
+    min-height: 45rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+
+    input{
+        @include font-base($font-size: 2.5rem, $color:$color-blue-600, $font-weight: 600);
+
+        &::placeholder{
+            @include font-base($font-size: 2.5rem, $color:$color-blue-600, $font-weight: 600);
+        }
+        &:focus, &:active{
+            outline: none;
+        }
+    }
+    .btn-form-submit{
+        color: $color-white !important;
+    }
+}

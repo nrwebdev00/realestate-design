@@ -1,0 +1,7 @@
+.tag-agent{
+    padding: .75rem;
+    border: 2px solid $color-blue-400;
+    background-color: $color-blue-400;
+    @include font-base($font-size: 1.5rem, $font-weight: 400, $color: $color-white);
+    border-radius: 5rem;
+}

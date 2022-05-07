@@ -1,0 +1,34 @@
+@media only screen and (max-width: 1500px){
+    .header-btn-wrapper{
+        a{
+            font-size: 1.5rem !important;
+        }
+    }
+    .header-logo-wrapper{
+        padding-left: 2rem !important;
+        h2{
+            font-size: 1.5rem;
+        }
+    }
+    .header-user-btn-wrapper{
+        a{
+            font-size: 1.25rem !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 949px){
+    .header{
+        display: none;
+    }
+    .mobile-header{
+        display: grid;
+    }
+
+
+}
+
+@media only screen and (max-width: 750px){
+
+
+}
